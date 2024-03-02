@@ -1,0 +1,5 @@
+# List all available timezones
+timedatectl list-timezones
+
+# timedatectl set-timezone Zone/SubZone
+timedatectl set-timezone America/Phoenix

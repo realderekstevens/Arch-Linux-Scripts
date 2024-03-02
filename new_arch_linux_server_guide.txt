@@ -1,0 +1,6 @@
+sudo pacman -R python-pip nano
+sudo pacman -Syu ufw
+sudo pacman -S python-psycopg python-django 
+
+
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim

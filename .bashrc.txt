@@ -18,6 +18,19 @@ elif [ -f /etc/bash_completion ]; then
 fi
 
 #######################################################
+# ArchLinux Pacman Modifications BY D. E. Stevens
+#######################################################
+
+alias pacman_packages='pacman -Qe'
+alias pacman_group='pacman -Sg'
+alias pacman_foreign='pacman -Qm'
+alias pacman_native='pacman -Qn'
+alias pacman_regex='pacman -Qs regex'
+
+## This one needs expac
+alias pacman_regex_expac='expac -s "%-30n %v" regex'
+
+#######################################################
 # EXPORTS
 #######################################################
 
@@ -120,7 +133,7 @@ alias multitail='multitail --no-repeat -c'
 alias freshclam='sudo freshclam'
 alias vim='nvim'
 alias vi='nvim'
-alias svi='sudo vin'
+alias svi='sudo nvim'
 alias vis='nvim "+set si"'
 
 # Change directory aliases
