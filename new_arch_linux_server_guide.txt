@@ -1,8 +1,10 @@
 sudo pacman -R python-pip nano
-sudo pacman -Syu ufw git
+sudo pacman -Syu ufw gitf
 
 git clone https://github.com/realderekstevens/my_scripts/.bashrc --depth && cp .bashrc ..
 cd ..
 source .bashrc
 rm -rf .my_scripts
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvimff
+
+## not doing this right sudo useradd -G wheel,audio,video -m dude -p password
