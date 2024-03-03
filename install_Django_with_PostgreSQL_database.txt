@@ -1,1 +1,1 @@
-sudo pacman -S python-psycopg python-django 
+sudo pacman -S python-psycopg python-django nginx
