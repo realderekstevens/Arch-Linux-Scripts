@@ -1,5 +1,8 @@
 sudo pacman -R python-pip nano
 sudo pacman -Syu ufw git
 
-git clone 
+git clone https://github.com/realderekstevens/my_scripts/.bashrc --depth && cp .bashrc ..
+cd ..
+source .bashrc
+rm -rf .my_scripts
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
