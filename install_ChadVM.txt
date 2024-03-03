@@ -1,4 +1,9 @@
+## Uninstall
 rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
 
+## Make sure the nerd font you set doesn't end with Mono to prevent small icons.
+## Example : JetbrainsMono Nerd Font and not JetbrainsMono Nerd Font Mono
+
+sudo pacman -Syu ttf-jetbrains-mono
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim

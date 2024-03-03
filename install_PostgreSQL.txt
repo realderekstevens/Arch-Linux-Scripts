@@ -8,5 +8,7 @@ vim /var/lib/postgres/.psql_history
 :wq
 chown postgres /var/lib/postgres/.psql_history
 
+# Might be better as chmod +rw
+
 ## Guide for executing code on commandline as root
 sudo -u postgres psql
