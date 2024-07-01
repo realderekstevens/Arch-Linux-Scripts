@@ -1,7 +1,5 @@
 #!/bin/bash
 
-sudo pacman -Syu gum
-
 PSQL="psql -X --username=postgres --dbname=bikes --tuples-only -c"
 PSQL_CreateDatabase="psql -X --username=postgres --dbname=postgres --tuples-only -c"
 
@@ -46,7 +44,7 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 }
 
 init_database_management(){
-sudo pacman -R vim
+sudo pacman -R vim python-pip python-authlib python-cryptography python-cfficloud-init python-jinja python-pycparser nano
 sudo pacman -Syu postgresql ufw go neovim
 }
 
@@ -97,5 +95,3 @@ echo -e "Successfully set Timezone to: $(gum style --foreground 212 "America/Pho
 
 sleep 1; clear
 
-sudo pacman -R vim
-sudo pacman -Syu postgresql ufw go ttf-jetbrains-mono neovim
