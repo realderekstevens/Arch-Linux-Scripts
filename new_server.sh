@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo pacman -Syu gum
+
 PSQL="psql -X --username=postgres --dbname=bikes --tuples-only -c"
 PSQL_CreateDatabase="psql -X --username=postgres --dbname=postgres --tuples-only -c"
 
