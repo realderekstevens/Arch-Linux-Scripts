@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Update yourstockforecast
+Comment=S-t96J[NPB#J}oxP
+Exec=scp -r public/* root@yourstockforecast.com:/srv/http
+Icon=
+Path=
+Terminal=true
+StartupNotify=false
