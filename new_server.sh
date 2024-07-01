@@ -23,7 +23,18 @@ MAIN_MENU(){
 esac
 }
 
-MAIN_MENU()
+### FUNCTIONS ###
+
+installpkg() {
+	pacman --noconfirm --needed -S "$1" >/dev/null 2>&1
+}
+
+error() {
+	# log to stderr and exit with failure.
+	printf "%\n" "$1" >&2
+	exit 1
+}
+
 
 getuserandpass(){
 	NAME=$(gum input --placeholder "First, please enter a name for the user account."
