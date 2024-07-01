@@ -1,7 +1,5 @@
 #!/bin/bash
 
-sudo pacman -S --noconfirm gum
-
 gum style --border normal --margin "1" --padding "1 2 " --border-foreground 212 "Hello, there! Welcome to $(gum style --foreround 212 'Derek's Vultr Arch Linux PostgREST Setup)."
 
 getuserandpass(){
@@ -10,6 +8,15 @@ getuserandpass(){
 		name=$("Username not valid. Give a username beginning with a letter, with only lowercase letters, - or _.")
 	echo -e "Well, it is nice to meet you, $(gum style --foreground 212 "$NAME")."
 done
+}
+
+reinstall_neovim(){
+## Uninstall
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nvim
+sudo pacman -Syu ttf-terminus-nerd
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 }
 
 init_database_management(){
