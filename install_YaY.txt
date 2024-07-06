@@ -1,5 +1,0 @@
-## This can only be done as a non-root user
-sudo pacman -Syu git
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si

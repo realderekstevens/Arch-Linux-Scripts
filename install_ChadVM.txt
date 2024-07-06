@@ -6,4 +6,4 @@ rm -rf ~/.local/share/nvim
 ## Example : JetbrainsMono Nerd Font and not JetbrainsMono Nerd Font Mono
 
 sudo pacman -Syu ttf-jetbrains-mono
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+git clone https://github.com/NvChad/starter ~/.config/nvim --depth 1 && nvim
