@@ -6,6 +6,24 @@
 - No Docker or cloud services—just pacman, Python, Uvicorn (ASGI server), Nginx, and systemd.
 - We'll create and use a dedicated non-root user 'derek' for the app to enhance security.
 
+### Step 0: update
+Logged in as root:
+```
+sudo apt update
+sudo apt install -y git wget curl
+```
+This upates the Debian 13 OS to the must recent version and installs the needed git commands.
+
+### Step 0.5: Install Hugo Extended Libraries directly from Github
+Logged in as root:
+```
+cd /tmp
+wget https://github.com/gohugoio/hugo/releases/download/v0.151.0/hugo_extended_0.151.0_linux-amd64.deb
+sudo dpkg -i hugo_extended_0.151.0_linux-amd64.deb
+hugo version
+```
+This installs the most recent version of Hugo Extended directly to the Debian 13 libraries.
+
 ### Step 1: Create the User 'derek'
 Logged in as root:
 ```
