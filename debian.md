@@ -37,6 +37,13 @@ Add 'derek' to the www-data group (for Nginx compatibility; first install Nginx 
 groupadd www-data  # If it doesn't exist
 usermod -aG www-data derek
 ```
+```
+sudo mkdir -p /var/www/derekstevens.net
+sudo chown $USER:$USER /var/www/derekstevens.net  # Own it
+cd /var/www/derekstevens.net
+hugo new site . --force  # Dot for current dir
+git init
+```
 
 To allow 'derek' to use sudo (needed for some system commands later):
 ```
