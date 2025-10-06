@@ -9,8 +9,8 @@
 ### Step 0: update
 Logged in as root:
 ```
-sudo apt update
-sudo apt install -y git wget curl
+sudo apt update && apt upgrade -y
+sudo apt install -y git wget curl ufw
 ```
 This upates the Debian 13 OS to the must recent version and installs the needed git commands.
 
@@ -39,7 +39,7 @@ usermod -aG www-data derek
 ```
 ```
 sudo mkdir -p /var/www/derekstevens.net
-sudo chown $USER:$USER /var/www/derekstevens.net  # Own it
+sudo chown derek:derek /var/www/derekstevens.net  # Own it
 cd /var/www/derekstevens.net
 hugo new site . --force  # Dot for current dir
 git init
