@@ -49,8 +49,11 @@ To allow 'derek' to use sudo (needed for some system commands later):
 visudo
 ```
 Add this line at the end: `derek ALL=(ALL:ALL) ALL`. Save and exit.
-CTRL+W
+
+```
+CTRL+W  #then hit 'y'
 CTRL+O
+```
 
 Switch to user 'derek':
 ```
@@ -61,7 +64,7 @@ su - derek
 ### Step 3: Set Up Your App Directory and Virtual Environment
 As 'derek':
 ```
-sudo mkdir -p /var/www/derekstevensdotnet
-sudo chown derek:www-data /var/www/derekstevensdotnet
-cd /var/www/derekstevensdotnet
+sudo mkdir -p /var/www/derekstevens.net
+sudo chown derek:www-data /var/www/derekstevens.net
+cd /var/www/derekstevens.net
 ```
