@@ -58,13 +58,6 @@ su - derek
 ```
 (If you need to return to root later, use `exit`.)
 
-### Step 3: Install custom .bashrc
-As 'derek' (using sudo):
-```
-rm ~/.bashrc
-wget https://raw.githubusercontent.com/realderekstevens/Arch-Linux-Scripts/refs/heads/main/.bashrc ~/
-```
-
 ### Step 3: Set Up Your App Directory and Virtual Environment
 As 'derek':
 ```
