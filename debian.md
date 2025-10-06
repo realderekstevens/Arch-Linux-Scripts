@@ -9,7 +9,7 @@ Run these commands to ensure your system is up to date:
 Logged in as root:
 ```
 sudo apt update && apt upgrade -y
-sudo apt install -y git wget curl ufw
+sudo apt install -y git wget curl ufw nginx
 ```
 This upates the Debian 13 OS to the must recent version and installs the needed git commands.
 
@@ -56,11 +56,11 @@ su - derek
 ```
 (If you need to return to root later, use `exit`.)
 
-### Step 2: Update and Install Basics
+### Step 3: Install custom .bashrc
 As 'derek' (using sudo):
 ```
-sudo pacman -Syu --noconfirm
-sudo pacman -S --noconfirm python python-pip nginx
+rm ~/.bashrc
+wgit https://raw.githubusercontent.com/realderekstevens/Arch-Linux-Scripts/refs/heads/main/.bashrc ~/
 ```
 
 ### Step 3: Set Up Your App Directory and Virtual Environment
