@@ -18,7 +18,7 @@ We'll create a non-root user derek for security, and all site/email files will b
 Logged in as root:
 ```
 sudo apt update && apt upgrade -y
-sudo apt install -y git wget curl ufw nginx rsync
+sudo apt install -y git wget curl ufw nginx rsync python3-certbot-nginx
 ```
 This upates the Debian 13 OS to the must recent version and installs the needed git commands.
 
