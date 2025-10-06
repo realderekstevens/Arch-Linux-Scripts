@@ -9,9 +9,16 @@ Run these commands to ensure your system is up to date:
 Logged in as root:
 ```
 sudo apt update && apt upgrade -y
-sudo apt install -y git wget curl ufw nginx
+sudo apt install -y git wget curl ufw nginx rsync
 ```
 This upates the Debian 13 OS to the must recent version and installs the needed git commands.
+
+Then setup the firewall (UFW) to abide by the port for nginx, disable it for now
+```
+ufw allow 'Nginx Full'
+ufw allow OpenSSH
+ufw disable
+```
 
 ### Step 0.5: Install Hugo Extended Libraries directly from Github
 Logged in as root:
@@ -40,6 +47,8 @@ usermod -aG www-data derek
 sudo mkdir -p /var/www/derekstevens.net
 sudo chown derek:derek /var/www/derekstevens.net  # Own it
 cd /var/www/derekstevens.net
+```
+```
 hugo new site . --force  # Dot for current dir
 git init
 ```
@@ -53,4 +62,10 @@ Add this line at the end: `derek ALL=(ALL:ALL) ALL`. Save and exit.
 ```
 CTRL+W  #then hit 'y'
 CTRL+O
+```
+
+Then setup certbot
+```
+apt install certbot python3-certbot-nginx -y
+certbot --nginx -d derekstevens.net www.derekstevens.net
 ```
