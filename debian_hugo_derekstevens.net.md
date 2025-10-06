@@ -8,7 +8,7 @@ All commands are to be run as root unless specified otherwise.
 
 We'll use nano for editing files. 
 
-The site will be hosted at derekstevens.net and www.derekstevens.net, with email at mail.derekstevens.net. 
+The site will be hosted at <derekstevens.net> and <www.derekstevens.net>, with email at <mail.derekstevens.net> & <www.mail.derekstevens.net>. 
 
 The Hugo site will use the hugo-book theme for documentation-style content.
 
