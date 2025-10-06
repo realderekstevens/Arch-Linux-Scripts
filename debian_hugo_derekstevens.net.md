@@ -57,6 +57,7 @@ sudo mkdir -p /var/www/derekstevens.net
 sudo chown derek:derek /var/www/derekstevens.net  # Own it
 cd /var/www/derekstevens.net
 ```
+If you are making a brand new hugo website; Use below command. Skip if using pre-existing github entry.
 ```
 hugo new site . --force  # Dot for current dir
 git init
