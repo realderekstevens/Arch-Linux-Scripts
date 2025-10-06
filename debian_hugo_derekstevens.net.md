@@ -1,6 +1,16 @@
 ### Step-by-Step Setup Guide for Hugo Site with Hugo-Book Theme on Debian 13
 
-This guide assumes you have just provisioned a fresh Debian 13 VPS on Cloudzy and are logged in as the root user via SSH. We'll proceed sequentially, starting with system basics, user creation, installations, GitHub integration, Hugo setup, web server configuration, email server setup, and SSL. All commands are to be run as root unless specified otherwise. We'll use nano for editing files. The site will be hosted at derekstevens.net and www.derekstevens.net, with email at mail.derekstevens.net. The Hugo site will use the hugo-book theme for documentation-style content.
+This guide assumes you have just provisioned a fresh Debian 13 VPS on Cloudzy and are logged in as the root user via SSH. 
+
+We'll proceed sequentially, starting with system basics, user creation, installations, GitHub integration, Hugo setup, web server configuration, email server setup, and SSL. 
+
+All commands are to be run as root unless specified otherwise. 
+
+We'll use nano for editing files. 
+
+The site will be hosted at derekstevens.net and www.derekstevens.net, with email at mail.derekstevens.net. 
+
+The Hugo site will use the hugo-book theme for documentation-style content.
 
 We'll create a non-root user derek for security, and all site/email files will be owned by derek:derek (not $USER:$USER). Ownership commands will explicitly use derek:derek.
 
