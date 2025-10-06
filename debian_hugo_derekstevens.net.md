@@ -49,6 +49,8 @@ To allow 'derek' to use sudo (needed for some system commands later):
 visudo
 ```
 Add this line at the end: `derek ALL=(ALL:ALL) ALL`. Save and exit.
+CTRL+W
+CTRL+O
 
 Switch to user 'derek':
 ```
@@ -60,7 +62,7 @@ su - derek
 As 'derek' (using sudo):
 ```
 rm ~/.bashrc
-wgit https://raw.githubusercontent.com/realderekstevens/Arch-Linux-Scripts/refs/heads/main/.bashrc ~/
+wget https://raw.githubusercontent.com/realderekstevens/Arch-Linux-Scripts/refs/heads/main/.bashrc ~/
 ```
 
 ### Step 3: Set Up Your App Directory and Virtual Environment
